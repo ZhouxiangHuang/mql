@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import UpperDiv from "./upperDiv"
 
 class Layout extends React.Component {
   render() {
     return (
-      <h1>米其林</h1>
+      <div id='app'>
+        <UpperDiv />
+      </div>
     );
   }
 }
