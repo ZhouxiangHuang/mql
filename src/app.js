@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import UpperDiv from "./upperDiv";
 import MiddleDiv from "./middleDiv";
+import LowerDiv from "./lowerDiv";
 
 class Layout extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class Layout extends React.Component {
       <div id='app'>
         <UpperDiv />
         <MiddleDiv />
+        <LowerDiv />
       </div>
     );
   }
