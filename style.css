@@ -151,7 +151,8 @@ body {
   top: 0;
   width: 100%;
   height: 40px;
-  background-color: #89bdd3;;
+  background-color: #89bdd3;
+  z-index:99;
 }
 
 #guideNavBar p {
@@ -190,4 +191,28 @@ body {
 
 #article h5{
   line-height: 0;
+}
+
+#guideSearch {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+}
+
+#guideSearch input {
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #a0a0a0;
+}
+
+#guideSearch button {
+  position: absolute;
+  height: 34px;
+  width:50px;
+  background:  #89bdd3;
+  border: 0;
+  font-size:15px;
+  color: white;
 }
