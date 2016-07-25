@@ -109,11 +109,11 @@ body {
 }
 
 #lowerDiv {
-  position: fixed;
+  position: absolute;
   height: 70px;
   width: 100%;
-  bottom: 0;
   left: 0;
+  margin-top: 830px;
   background: #323232;
 }
 
@@ -164,7 +164,7 @@ body {
   margin: auto;
   width: 80%;
   height: 220px;
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: white;
   border: 1px solid #a0a0a0;
 }
@@ -196,7 +196,7 @@ body {
 #guideSearch {
   margin: auto;
   width: 80%;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 #guideSearch input {
@@ -215,4 +215,35 @@ body {
   border: 0;
   font-size:15px;
   color: white;
+}
+
+.resInfo {
+  background-color: white;
+  width: 80%;
+  height: 180px;
+  border: 1px solid #a0a0a0;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.resInfo h2 {
+  margin-left: 230px;
+}
+
+.resInfo p {
+  margin-left: 230px;
+  font-size: 10px;
+}
+
+#resImage {
+  float: left;
+  height: 180px;
+  width: 200px;
+  background-image: url(./img/resimage.jpg);
+  background-size: 100% 100%;
+}
+
+#tbl {
+  margin-left: 230px;
+  font-size: 15px;
 }

@@ -1,21 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import UpperDiv from "./upperDiv";
-import MiddleDiv from "./middleDiv";
-import LowerDiv from "./lowerDiv";
-import GuideNavBar from "./guideNavBar";
-import GuideArticles from "./guideArticles";
-import GuideSearchBar from "./guideSearchBar";
+import UpperDiv from "./home/upperDiv";
+import MiddleDiv from "./home/middleDiv";
+import LowerDiv from "./home/lowerDiv";
+import GuideMainPage from "./articlesList/guidePageMain";
+import RestaurantMainPage from "./restaurantList/restaurantList";
 
 class Layout extends React.Component {
   render() {
-    return (
-      <div id='app'>
-        <GuideSearchBar />
-        <GuideNavBar />
-        <GuideArticles />
-      </div>
-    );
+      return (
+        <div id='app'>
+          <RestaurantMainPage />
+        </div>
+      )
   }
 }
 
