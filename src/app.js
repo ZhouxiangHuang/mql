@@ -6,6 +6,7 @@ import LowerDiv from "./home/lowerDiv";
 import GuideMainPage from "./articlesList/guidePageMain";
 import RestaurantMainPage from "./restaurantList/restaurantList";
 import ArticleMain from "./articlePage/articleMain";
+const database = require('../database/testData.json');
 
 class Layout extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class Layout extends React.Component {
     if (this.state.page === "res") {
       return (
         <div id='app'>
-          <RestaurantMainPage changeToHome = {this.changeToHome} changeToGuide = {this.changeToGuide}/>
+          <RestaurantMainPage changeToHome = {this.changeToHome} changeToGuide = {this.changeToGuide} resList = {database}/>
           <LowerDiv />
         </div>
       )

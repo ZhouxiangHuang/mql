@@ -1,37 +1,28 @@
 import React, {Component} from 'react';
+import Table from './table';
+import ResName from './resName';
+import ResImg from './resImg';
 
 export default class ResInfo extends Component {
   render() {
+    'use strict'
+    const tableNum = Object.keys(this.props.resList).length;
+    const resNames = Object.keys(this.props.resList);
+    let tables = [];
+    for (let i = 0; i < tableNum; i++) {
+      let tableInfo = this.props.resList[resNames[i]];
+      tables.push(<div key={i} class="resInfo">
+                    <ResName resName = {tableInfo[0]} />
+                    <ResImg resImg = {tableInfo[tableInfo.length - 1]}/>
+                    <table class="tbl">
+                        <Table resInfo = {tableInfo}/>
+                    </table>
+                  </div>)
+    }
+
     return (
-      <div class="resInfo">
-        <div id="resImage"></div>
-        <h2>Buffalo Stakehouse</h2>
-        <table id="tbl">
-        <tbody>
-
-          <tr>
-            <td>地址：</td>
-            <td>1201 Budapest, Török Flóris utca 217</td>
-          </tr>
-          <tr>
-            <td>周一 至 周五</td>
-            <td>13:00 – 23:00</td>
-          </tr>
-          <tr>
-            <td>周六</td>
-            <td>12:00 – 23:00</td>
-          </tr>
-          <tr>
-            <td>周日</td>
-            <td>12:00 – 22:00</td>
-          </tr>
-          <tr>
-            <td>电话：</td>
-            <td>+36 1 2850009/+3670 9410691</td>
-          </tr>
-
-        </tbody>
-        </table>
+      <div>
+        {tables}
       </div>
     )
   }

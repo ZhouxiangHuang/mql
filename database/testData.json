@@ -1,0 +1,25 @@
+module.exports = {"Big Fish": [
+  {"name": "Big Fish"},
+  {"address": "Andrassy ut 44,Budapest 1061,Hungary"},
+  {"hours": "周一 至 周日12:00 – 22:00"},
+  {"sp": "0"},
+  {"phone": "+36 1 269 0693"},
+  {"img": "http://static.origos.hu/s/img/i/1304/20130402-big-fish-pult.jpg"}
+],
+"Buffalo Steak House": [
+  {"name": "Buffalo Steak House"},
+  {"address": "1201 Budapest, Török Flóris utca 217"},
+  {"hours": "周一 至 周五 13:00 – 23:00"},
+  {"sp": "周六12:00 – 23:00, 周日 12:00 – 22:00"},
+  {"phone": "+36 1 2850009, +3670 9410691"},
+  {"img": "https://makhsoom.com/lb/storage/32000/3903/8d6fafda4969948332e33a62de934532.jpg"}
+],
+"Prime": [
+  {"name": "Prime"},
+  {"address": "1051 Budapest Sas utca 18."},
+  {"hours": "周一 - 周三 12:00-24:00, 周四 - 周六 12:00-01:00"},
+  {"sp": "周日：休息"},
+  {"phone": "+36303318666"},
+  {"img": "https://static.mgmresorts.com/content/dam/MGM/bellagio/dining/prime-steakhouse/food-and-drink/bellagio-prime-steakhouse-steak.tif.image.960.540.high.jpg"}
+]
+}
