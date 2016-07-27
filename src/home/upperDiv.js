@@ -6,7 +6,7 @@ export default class UpperDiv extends Component {
   render() {
     return (
       <div id='upperDiv'>
-        <Navbar />
+        <Navbar changeToRes = {this.props.changeToRes} changeToGuide = {this.props.changeToGuide}/>
         <Search />
       </div>
     )

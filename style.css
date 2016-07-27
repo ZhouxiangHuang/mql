@@ -24,6 +24,10 @@ body {
   margin-top: 10px;
 }
 
+#nav p {
+  cursor: pointer;
+}
+
 #search {
   position: absolute;
   height: 35px;
@@ -157,6 +161,7 @@ body {
 
 #guideNavBar p {
   line-height: 40px;
+  cursor: pointer;
 }
 
 #guideArticles {
@@ -246,4 +251,16 @@ body {
 #tbl {
   margin-left: 230px;
   font-size: 15px;
+}
+
+.article {
+  margin: auto;
+  margin-top: 70px;
+  width: 70%;
+  height: 700px;
+  border: 2px solid green;
+}
+
+.article h2, h5{
+  margin-left: 15px;
 }

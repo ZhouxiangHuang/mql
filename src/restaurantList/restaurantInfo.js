@@ -7,6 +7,8 @@ export default class ResInfo extends Component {
         <div id="resImage"></div>
         <h2>Buffalo Stakehouse</h2>
         <table id="tbl">
+        <tbody>
+
           <tr>
             <td>地址：</td>
             <td>1201 Budapest, Török Flóris utca 217</td>
@@ -27,6 +29,8 @@ export default class ResInfo extends Component {
             <td>电话：</td>
             <td>+36 1 2850009/+3670 9410691</td>
           </tr>
+
+        </tbody>
         </table>
       </div>
     )

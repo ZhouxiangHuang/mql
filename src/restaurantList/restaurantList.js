@@ -8,7 +8,7 @@ export default class RestaurantMainPage extends Component {
   render() {
     return (
       <div>
-        <GuideNavBar />
+        <GuideNavBar changeToHome = {this.props.changeToHome} changeToGuide = {this.props.changeToGuide}/>
         <GuideSearchBar />
         <ResInfo />
       </div>
