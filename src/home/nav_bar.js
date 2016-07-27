@@ -5,10 +5,10 @@ export default class Navbar extends Component {
   render() {
     return (
       <div id="nav">
-        <p class='navButton' id="home">首页</p>
-        <p class='navButton' onClick = {this.props.changeToRes}>餐厅</p>
-        <p class='navButton' onClick = {this.props.changeToGuide}>指南</p>
-        <p class='navButton'>关于我们</p>
+        <button class='navButton homeNav' id="home">首页</button>
+        <button class='navButton homeNav' onClick = {this.props.changeToRes}>餐厅</button>
+        <button class='navButton homeNav' onClick = {this.props.changeToGuide}>指南</button>
+        <button class='navButton homeNav'>关于我们</button>
       </div>
     )
   }

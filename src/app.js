@@ -10,7 +10,7 @@ import ArticleMain from "./articlePage/articleMain";
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {page: "article"};
+    this.state = {page: "res"};
     this.changeToRes = this.changeToRes.bind(this);
     this.changeToHome = this.changeToHome.bind(this);
     this.changeToGuide = this.changeToGuide.bind(this);
@@ -58,6 +58,7 @@ class Layout extends React.Component {
       return (
         <div id='app'>
           <ArticleMain changeToRes = {this.changeToRes} changeToHome = {this.changeToHome} changeToGuide = {this.changeToGuide}/>
+          <LowerDiv />
         </div>
       )
     }
