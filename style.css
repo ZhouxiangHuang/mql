@@ -255,16 +255,17 @@ body {
 }
 
 .resInfo h2 {
-  margin-left: 230px;
+  margin-left: 10px;
   font-family: sans-serif,SimSun, SimHei;
+  display: inline-block;;
 }
 
 .resImage {
   float: left;
   height: 180px;
   width: 220px;
-  background-image: url(./img/resimage.jpg);
   background-size: 100% 100%;
+  background-image: url('img/resimage.jpg');
 }
 
 .tbl {

@@ -15,7 +15,7 @@ export default class ResInfo extends Component {
                     <ResName resName = {tableInfo[0]} />
                     <ResImg resImg = {tableInfo[tableInfo.length - 1]}/>
                     <table class="tbl">
-                        <Table resInfo = {tableInfo}/>
+                        <Table resInfo = {tableInfo} key = {i}/>
                     </table>
                   </div>)
     }

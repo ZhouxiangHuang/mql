@@ -7,7 +7,7 @@ export default class Table extends Component {
     let rows = [];
     for (let i = 0; i < this.props.resInfo.length; i++) {
       let rowInfo = this.props.resInfo[i];
-      rows.push(<Row row = {rowInfo}/>)
+      rows.push(<Row row = {rowInfo} key = {i}/>)
     }
     return (
       <tbody>
