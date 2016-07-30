@@ -6,12 +6,12 @@ import LowerDiv from "./home/lowerDiv";
 import GuideMainPage from "./articlesList/guidePageMain";
 import RestaurantMainPage from "./restaurantList/restaurantList";
 import ArticleMain from "./articlePage/articleMain";
-const database = require('../database/testData.json');
+const restaurantData = require('../database/testData.json');
 
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {page: "res"};
+    this.state = {page: "home"};
     this.changeToRes = this.changeToRes.bind(this);
     this.changeToHome = this.changeToHome.bind(this);
     this.changeToGuide = this.changeToGuide.bind(this);
@@ -42,7 +42,7 @@ class Layout extends React.Component {
     if (this.state.page === "res") {
       return (
         <div id='app'>
-          <RestaurantMainPage changeToHome = {this.changeToHome} changeToGuide = {this.changeToGuide} resList = {database}/>
+          <RestaurantMainPage changeToHome = {this.changeToHome} changeToGuide = {this.changeToGuide} resList = {restaurantData}/>
           <LowerDiv />
         </div>
       )

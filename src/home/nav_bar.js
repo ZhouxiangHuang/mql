@@ -5,6 +5,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <div id="nav">
+        <img id="logo" src="./icons/wangao.png"></img>
         <button class='navButton homeNav' id="home">首页</button>
         <button class='navButton homeNav' onClick = {this.props.changeToRes}>餐厅</button>
         <button class='navButton homeNav' onClick = {this.props.changeToGuide}>指南</button>
