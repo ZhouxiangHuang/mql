@@ -1,5 +1,10 @@
 var http = require('http');
 var fs = require('fs');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test', function() {
+  console.log('connected to mongo!');
+});
+
 
 http.createServer(function(req, res) {
   console.log(req.url);
