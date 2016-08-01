@@ -5,9 +5,9 @@ export default class LowerDiv extends Component {
     return (
       <div id="lowerDiv">
         <p>关注我们：</p>
-        <img src="./icons/weibo.png"/>
-        <img src="./icons/facebook.png"/>
-        <img src="./icons/instagram.png"/>
+        <img/>
+        <img/>
+        <img/>
         <p>© 2016 MQLSTUDIOS ALL RIGHTS RESERVED</p>
       </div>
     )

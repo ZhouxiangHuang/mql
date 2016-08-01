@@ -12,7 +12,7 @@ body {
   width: 100%;
   left: 0%;
   top: 0%;
-  background-image: url(./img/image1.JPG);
+  /*background-image: url(./img/image1.JPG);*/
   background-size: 100% 450px;
   border-bottom: 1px solid #9ad3de;
 }
@@ -110,17 +110,17 @@ body {
 }
 
 #img1 {
-  background-image: url(./img/romantic.jpg);
+  /*background-image: url(./img/romantic.jpg);*/
 }
 
 #img2 {
-  background-image: url(./img/icecream.jpg);
+  /*background-image: url(./img/icecream.jpg);*/
   margin-right: 30px;
   margin-left: 30px;
 }
 
 #img3 {
-  background-image: url(./img/img3.jpg);
+  /*background-image: url(./img/img3.jpg);*/
 }
 
 #middleHeading {
@@ -200,7 +200,7 @@ body {
   float: right;
   width:220px;
   height: 220px;
-  background-image: url(./img/icecream.jpg);
+  /*background-image: url(./img/icecream.jpg);*/
   background-size: 100% 100%;
   display: inline-block;
 }

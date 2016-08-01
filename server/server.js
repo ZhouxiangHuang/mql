@@ -1,18 +1,32 @@
 var http = require('http');
 var fs = require('fs');
+var resController = require('./ResList/resListController');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test', function() {
-  console.log('connected to mongo!');
+
+var db = mongoose.connection;
+
+mongoose.connect('mongodb://localhost/mql');
+
+db.on('error', function (err) {
+console.log('connection error', err);
+});
+
+db.once('open', function () {
+console.log('connected.');
 });
 
 
+
+
 http.createServer(function(req, res) {
-  console.log(req.url);
+  if (req.url === '/restaurant') {
+    return resController.getList(req, res);
+  }
   if (req.url === "/") {
     fs.readFile('index.html', function(err, data) {
       res.writeHead(200, {"Content-Type": "text/html"});
       res.write(data);
-      res.end();
+      return res.end();
     })
   }
 
@@ -20,7 +34,7 @@ http.createServer(function(req, res) {
     fs.readFile('style.css', function(err, data) {
       res.writeHead(200, {"Content-Type": "text/css"});
       res.write(data);
-      res.end();
+      return res.end();
     })
   }
 
@@ -31,4 +45,5 @@ http.createServer(function(req, res) {
       res.end();
     })
   }
+
 }).listen(3000);
