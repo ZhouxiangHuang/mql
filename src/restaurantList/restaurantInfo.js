@@ -6,18 +6,16 @@ import ResImg from './resImg';
 export default class ResInfo extends Component {
   render() {
     'use strict'
-    const tableNum = Object.keys(this.props.resList).length;
-    const resNames = Object.keys(this.props.resList);
+    const tableNum = Object.keys(this.props.resData).length;
     let tables = [];
     for (let i = 0; i < tableNum; i++) {
-      let tableInfo = this.props.resList[resNames[i]];
       tables.push(<div key={i} class="resInfo">
-                    <ResName resName = {tableInfo[0]} />
-                    <ResImg resImg = {tableInfo[tableInfo.length - 1]}/>
+                    <ResName resName = {this.props.resData[i].res_name} />
+                    <ResImg resImg = {this.props.resData[i].img}/>
                     <table class="tbl">
-                        <Table resInfo = {tableInfo} key = {i}/>
+                        <Table resInfo = {this.props.resData[i]} key = {i}/>
                     </table>
-                  </div>)
+                  </div>);
     }
 
     return (

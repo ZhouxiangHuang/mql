@@ -4,6 +4,8 @@ var keys = 0;
 
 export default class Row extends Component {
 
+  //only one row's information will be received each time, thus only one if
+  //condition will be fulfilled to generate one row
   render() {
     'use strict'
     let rowdata = [];

@@ -17,7 +17,6 @@ console.log('connected.');
 
 
 
-
 http.createServer(function(req, res) {
   if (req.url === '/restaurant') {
     return resController.getList(req, res);

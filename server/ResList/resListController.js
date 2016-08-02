@@ -15,16 +15,8 @@ module.exports = {
     })
   },
 
-  postRes: function() {
-
-        var res = new Restaurant({
-          res_name: "Nine Dragon",
-          address: "123 baross gabor",
-          hours: "3:00 - 5:00",
-          sp: "none",
-          phone: 2138808188,
-          img: "testing"
-        })
+  postRes: function(resInfo) {
+        var res = new Restaurant(resInfo);
 
         res.save(function (err, data) {
           if (err) console.log(err);

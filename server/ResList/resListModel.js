@@ -6,7 +6,7 @@ var resListSchema = new Schema({
   address: String,
   hours: String,
   sp: String,
-  phone: Number,
+  phone: String,
   img: String
 })
 
