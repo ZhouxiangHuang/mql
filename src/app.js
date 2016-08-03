@@ -8,6 +8,7 @@ import RestaurantMainPage from "./restaurantList/restaurantList";
 import ArticleMain from "./articlePage/articleMain";
 const restaurantData = require('../database/testData.json');
 var resData;
+var artData;
 
 var $ = require('jQuery');
 
@@ -34,10 +35,13 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    console.log("componentdidmount called");
     $.get("http://localhost:3000/restaurant", function(result) {
       resData = result;
-      console.log("respond from server")
+    });
+
+    $.get("http://localhost:3000/articles", function(result) {
+      artData = result;
+      console.log("respond with articles", result);
     });
   }
 
@@ -62,7 +66,7 @@ class Layout extends React.Component {
     if (this.state.page === "guide") {
       return (
         <div id='app'>
-          <GuideMainPage changeToRes = {this.changeToRes} changeToHome = {this.changeToHome}/>
+          <GuideMainPage changeToRes = {this.changeToRes} changeToHome = {this.changeToHome} artData = {artData}/>
           <LowerDiv />
         </div>
       )

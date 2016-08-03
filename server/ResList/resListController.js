@@ -8,7 +8,6 @@ module.exports = {
         return res.end(err);
       }
       else {
-        console.log("getList called");
         res.writeHead(200, {'Content-Type': 'application/json'});
         return res.end(JSON.stringify(foundList));
       }

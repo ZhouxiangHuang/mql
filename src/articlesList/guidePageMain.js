@@ -9,7 +9,7 @@ export default class GuigeMainPage extends Component {
       <div>
         <GuideSearchBar />
         <GuideNavBar changeToHome = {this.props.changeToHome} changeToRes = {this.props.changeToRes}/>
-        <GuideArticles />
+        <GuideArticles artData = {this.props.artData}/>
       </div>
     )
   }

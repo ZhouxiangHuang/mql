@@ -20,6 +20,11 @@ http.createServer(function(req, res) {
   if (req.url === '/restaurant') {
     return resController.getList(req, res);
   }
+
+  if (req.url === '/articles') {
+    return artController.getArticles(req, res);
+  }
+
   if (req.url === "/") {
     fs.readFile('index.html', function(err, data) {
       res.writeHead(200, {"Content-Type": "text/html"});
