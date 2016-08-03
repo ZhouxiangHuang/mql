@@ -9,7 +9,6 @@ export default class Table extends Component {
     for (var key in this.props.resInfo) {
       var rowObj = {};
       rowObj[key] = this.props.resInfo[key];
-      console.log("row object:", rowObj);
       rows.push(<Row row = {rowObj} />)
       rowObj = {};
     }

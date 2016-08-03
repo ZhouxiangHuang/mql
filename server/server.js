@@ -1,8 +1,8 @@
 var http = require('http');
 var fs = require('fs');
 var resController = require('./ResList/resListController');
+var artController = require('./ArticleList/articleController');
 var mongoose = require('mongoose');
-
 var db = mongoose.connection;
 
 mongoose.connect('mongodb://localhost/mql');
@@ -14,7 +14,6 @@ console.log('connection error', err);
 db.once('open', function () {
 console.log('connected.');
 });
-
 
 
 http.createServer(function(req, res) {
