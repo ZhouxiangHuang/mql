@@ -8,7 +8,7 @@ export default class ArticleMain extends Component {
     return (
       <div>
         <GuideNavBar changeToRes = {this.props.changeToRes} changeToHome = {this.props.changeToHome} changeToGuide = {this.props.changeToGuide}/>
-        <Article />
+        <Article content = {this.props.artData} />
       </div>
     )
   }

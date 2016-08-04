@@ -41,7 +41,6 @@ class Layout extends React.Component {
 
     $.get("http://localhost:3000/articles", function(result) {
       artData = result;
-      console.log("respond with articles", result);
     });
   }
 
