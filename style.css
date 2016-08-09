@@ -12,7 +12,7 @@ body {
   width: 100%;
   left: 0%;
   top: 0%;
-  /*background-image: url(./img/image1.JPG);*/
+  background-image: url(homeImage);
   background-size: 100% 450px;
   border-bottom: 1px solid #9ad3de;
 }
